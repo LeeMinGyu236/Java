@@ -1,0 +1,47 @@
+1. 자바의 패키지.
+:전세계적으로 유일한 이름을 갖고있어야한다. (패키지명.클래스명)
+-> UUID 를 사용한다. (숫자와 문자열로 모두 표현이 가능함.) ex)domain
+
+package 상위,하위,,,
+package com.mycompany
+import com.hankook.Tire
+
+# 동일한 클래스인데 package가 다른 경우? 둘다 써야하는 경우?
+    import com.hankkok.*; *는 모든 클래스를 의미
+    import com.kumho.*;
+    -> 이럴경우에는 fullname을 모두 사용함.
+
+
+2. 접근 제한자
+public 제한범위 x
+protected 같은 패키지이거나, 자식 객체만 사용가능.
+default
+
+
+
+-------------------------q
+
+<상속>
+1. 개념
+    : 부모 클래스의 필드와 메소드를 자식 클래스에게 물려줄 수 있음.
+
+
+7. 자동 타입 변환
+    : 자동적으로 타입 변환이 일어나는 것.
+    작은 범위에서 큰 범위로 변경될때
+
+    primitive 작은범위 -> 큰범위 (자동)
+
+    animal a = new animal();
+    Cat c = a; x (down casting)
+    Cat c = new cat();
+    Animal animal = cat;
+
+    메소드 3, 가지고 있지만 부모만 보임. 부모만 호출할 수 이ㅣㅆ음.
+    실체가 중요하다!.
+
+
+8. 다형성
+    UPcasting을 기본으로 깔고 감.
+    자동 타입 변환 + 메소드 오버라이딩 = 다형성
+    ex)자동차에서 타이어를 교체하는 것과 같음.
