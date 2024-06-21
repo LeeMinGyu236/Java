@@ -1,4 +1,4 @@
-package ch06.ch11.exam01;
+package ch06.sec11.exam01;
 
 public class Korean {
     final String nation = "대한민국";
@@ -10,5 +10,4 @@ public class Korean {
         this.ssn = ssn;
         this.name = name;
     }
-
 }

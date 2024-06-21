@@ -1,4 +1,4 @@
-package Quiz1;//조건 1. 유저가 입력하 숫자만큼의 크기에 해당하는 도형을 출력하는 프로그램을 만든다.
+package 별찍기;//조건 1. 유저가 입력하 숫자만큼의 크기에 해당하는 도형을 출력하는 프로그램을 만든다.
 //ex)유저가 3을 입력했을 때 6을 입력했을때 출력할 도형의 크기가 다름.
 //마름모 7크기시 중간을 중심으로 위아래 1칸씩 줄어듦,
 
@@ -9,7 +9,7 @@ package Quiz1;//조건 1. 유저가 입력하 숫자만큼의 크기에 해당�
 
 import java.util.Scanner;
 
-public class Tools {
+public class 왼쪽_삼각별 {
     public static void main(String[] args) {
         while (true) {
             Scanner scanner = new Scanner(System.in);
@@ -17,14 +17,14 @@ public class Tools {
             System.out.println("프로그램을 종료하려면 777을 입력하세요");
             System.out.print("삼각형의 크기는?: ");
             num = scanner.nextInt();
+            if (num == 777) {
+                break;
+            }
             for (int i = 0; i < num; i++) {
                 for (int j = 0; j <= i; j++) {
                     System.out.print("*");
                 }
                 System.out.println();
-            }
-            if (num == 777) {
-                break;
             }
         }
         System.out.println("프로그램 종료");
